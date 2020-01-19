@@ -17,7 +17,7 @@ Instructions:
     
    Future Plans: 
       To create a fully functioning website that can register new users and save their information to the cloud. Then be able to access           that information from the cloud instead of the text file. To actually use the page elements instead of using tab presses and enter 
-      presses. Also wish to expand to more platforms. 
+      presses. Also wish to expand to more platforms. Also wish to include some kind of cyber security.
 
 
 
