@@ -29,7 +29,7 @@ class Follow:
 		sleep(2)
 	def followuser(self,username2):
 		self.driver.find_element_by_xpath("//input[@placeholder='Search']").send_keys(username2)
-		delay(2)
+		sleep(2)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
 		# keyboard.press(Key.enter)
