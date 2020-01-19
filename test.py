@@ -5,7 +5,7 @@ from pynput.keyboard import Key, Controller
 
 keyboard = Controller()
 
-class FollowBack:
+class Follow:
 	def __init__(self, username, pw):
 		self.driver = webdriver.Chrome()
 		self.username = username
@@ -27,7 +27,7 @@ class FollowBack:
 		self.driver.find_element_by_xpath("//button[contains(text(), 'Not Now')]")\
 			.click()
 		sleep(2)
-	def followback(self,username2):
+	def followuser(self,username2):
 		self.driver.find_element_by_xpath("//input[@placeholder='Search']").send_keys(username2)
 		delay(2)
 		keyboard.press(Key.enter)
@@ -41,5 +41,5 @@ class FollowBack:
 #pw = 'y6bs^Vm^RKT$tD?'
 pw = 'thisisatest'
 username = 'anujpradeep'
-my_bot = FollowBack('test.aaccc', pw)
-my_bot.followback(username)
+my_bot = Follow('test.aaccc', pw)
+my_bot.followuser(username)
