@@ -43,3 +43,4 @@ pw = 'thisisatest'
 username = 'anujpradeep'
 my_bot = Follow('test.aaccc', pw)
 my_bot.followuser(username)
+u = input("enter usename:")
