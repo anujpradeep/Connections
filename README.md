@@ -8,9 +8,9 @@ Objective:
   
 Instructions: 
   Input username and password and the other user's username that you want to connect with, then select the platforms that you wish to 
-  connnect on. 
-  
-  Notes:
+  connnect on.
+
+  Notes:  
     Prototype Overview:
     Only works so far for Twitter, Instagram, and Facebook. Assumes the user is already registered in data base (text file).
     Future Plans: 
