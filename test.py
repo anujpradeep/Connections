@@ -1,7 +1,6 @@
 from selenium import webdriver
 from time import sleep
 from pynput.keyboard import Key, Controller
-#from se import pw
 
 keyboard = Controller()
 
@@ -18,8 +17,6 @@ class Follow:
 			.send_keys(username)
 		self.driver.find_element_by_xpath("//input[@name=\"password\"]")\
 			.send_keys(pw)
-		# self.driver.find_element_by_xpath('//button[@type="submit"]')\
-		# 	.click()
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
 		sleep(4)
@@ -29,18 +26,25 @@ class Follow:
 		sleep(2)
 	def followuser(self,username2):
 		self.driver.find_element_by_xpath("//input[@placeholder='Search']").send_keys(username2)
-		sleep(2)
+		sleep(4)
 		keyboard.press(Key.enter)
 		keyboard.release(Key.enter)
-		# keyboard.press(Key.enter)
-		# keyboard.release(Key.enter)
+		sleep(1)
 
+		keyboard.press(Key.enter)
+		keyboard.release(Key.enter)
+		sleep(4)
+		keyboard.press(Key.tab)
+		keyboard.release(Key.tab)
+		keyboard.press(Key.tab)
+		keyboard.release(Key.tab)
+		keyboard.press(Key.enter)
+		keyboard.release(Key.enter)
 		
 #class Follow:
 
 #pw = 'y6bs^Vm^RKT$tD?'
 pw = 'thisisatest'
-username = 'anujpradeep'
+username = 'ryans_fire'
 my_bot = Follow('test.aaccc', pw)
 my_bot.followuser(username)
-u = input("enter usename:")
